@@ -1,0 +1,7 @@
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\bin\Debug\Kontenery.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\bin\Debug\Kontenery.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\bin\Debug\Kontenery.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\obj\Debug\Kontenery.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\obj\Debug\Kontenery.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\obj\Debug\Kontenery.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Kontenery\Kontenery\obj\Debug\Kontenery.pdb

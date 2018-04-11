@@ -1,0 +1,10 @@
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\obj\Debug\Graphs1.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\obj\Debug\Graphs1.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\bin\Debug\Graphs1.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\bin\Debug\Graphs1.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\bin\Debug\Graphs1.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\bin\Debug\Graph.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\obj\Debug\Graphs1.csproj.CopyComplete
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\obj\Debug\Graphs1.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab3\Graphs1\Graphs1\obj\Debug\Graphs1.pdb

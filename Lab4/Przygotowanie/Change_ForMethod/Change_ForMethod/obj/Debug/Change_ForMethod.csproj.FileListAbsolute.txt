@@ -1,0 +1,24 @@
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe.config
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.pdb
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\8 semestr\ASD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.pdb
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe.config
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.pdb
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.pdb
+D:\OneDrive\Uczelnia\MiNI\8 semestr\AiSD2\Lab2\Zadanie z zajec\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csproj.CopyComplete
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\bin\Debug\Change_ForMethod.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.csproj.CopyComplete
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Przygotowanie\Change_ForMethod\Change_ForMethod\obj\Debug\Change_ForMethod.pdb

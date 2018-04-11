@@ -1,0 +1,8 @@
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\bin\Debug\Lab7Workers.exe.config
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\bin\Debug\Lab7Workers.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\bin\Debug\Lab7Workers.pdb
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\bin\Debug\TestSet.dll
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\obj\Debug\Lab7Workers.csprojResolveAssemblyReference.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\obj\Debug\Lab7Workers.csproj.CoreCompileInputs.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\obj\Debug\Lab7Workers.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab7\Lab7Workers\Lab7Workers\obj\Debug\Lab7Workers.pdb

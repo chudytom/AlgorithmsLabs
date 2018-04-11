@@ -1,0 +1,7 @@
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\bin\Debug\Priorities.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\bin\Debug\Priorities.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\bin\Debug\Priorities.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\obj\Debug\Priorities.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\obj\Debug\Priorities.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\obj\Debug\Priorities.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Priorities\Priorities\obj\Debug\Priorities.pdb

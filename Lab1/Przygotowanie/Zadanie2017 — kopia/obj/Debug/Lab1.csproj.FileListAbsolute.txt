@@ -1,0 +1,8 @@
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\bin\Debug\Lab1.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\bin\Debug\Lab1.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\bin\Debug\Lab1.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\obj\Debug\Lab1.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab1\Przygotowanie\Zadanie2017\obj\Debug\Lab1.pdb

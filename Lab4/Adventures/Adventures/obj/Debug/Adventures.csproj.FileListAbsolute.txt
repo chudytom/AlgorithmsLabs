@@ -1,0 +1,17 @@
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.exe.config
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.pdb
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\TestSet.dll
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.csprojResolveAssemblyReference.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.csproj.CoreCompileInputs.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\Adventures.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.csproj.CopyComplete
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\obj\Debug\Adventures.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab4\Adventures\Adventures\bin\Debug\TestSet.dll

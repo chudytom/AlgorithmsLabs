@@ -1,0 +1,17 @@
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.csprojResolveAssemblyReference.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.csproj.CoreCompileInputs.cache
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.exe.config
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.pdb
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\TestSet.dll
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.exe
+h:\Windows7\Desktop\Przedmioty\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\Furniture.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.csprojResolveAssemblyReference.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab2\Zadanie\Furniture\Furniture\obj\Debug\Furniture.csproj.CopyComplete

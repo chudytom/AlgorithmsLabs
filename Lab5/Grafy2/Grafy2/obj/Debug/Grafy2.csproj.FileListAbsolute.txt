@@ -1,0 +1,10 @@
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\bin\Debug\Grafy2.exe.config
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\bin\Debug\Grafy2.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\bin\Debug\Grafy2.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\bin\Debug\Graph.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\bin\Debug\TestSet.dll
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\obj\Debug\Grafy2.csproj.CoreCompileInputs.cache
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\obj\Debug\Grafy2.csproj.CopyComplete
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\obj\Debug\Grafy2.exe
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\obj\Debug\Grafy2.pdb
+D:\OneDrive\Uczelnia\MiNI\10 semestr\AiSD2\Lab5\Grafy2\Grafy2\obj\Debug\Grafy2.csprojResolveAssemblyReference.cache
