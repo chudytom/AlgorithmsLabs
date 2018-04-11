@@ -18,117 +18,69 @@ namespace ASD
         /// </summary>
         public int[] DivideWorkersWork(int[] blocks, int expectedBlockSum)
         {
-            int worker1Sum = 0;
-            int worker2Sum = 0;
 
             //bool[] usedBlocks = new bool[blocks.Length];
             int[] resultBlocks = new int[blocks.Length];
+            bool divisionPossible = false;
 
-            bool result = false;
-            for (int block = 0; block < blocks.Length; block++)
+            for (int blockIndex = 0; blockIndex < blocks.Length; blockIndex++)
             {
-                if (GiveBlockTo1(block, 0) == true)
-                {
-                    result = true;
+                divisionPossible = giveBlock(blockIndex: blockIndex, workerNumber: 1, workerSum: 0);
+                if (divisionPossible)
                     break;
-                }
             }
 
-            if (result)
+            if (divisionPossible)
                 return resultBlocks;
             else
                 return null;
 
 
-            bool GiveBlockTo1(int blockIndex, int workerSum)
+            bool giveBlock(int blockIndex, int workerNumber, int workerSum)
             {
-                resultBlocks[blockIndex] = 1;
-                int currentSum = workerSum + blocks[blockIndex];
-                if (currentSum > expectedBlockSum)
+                if (blockIndex >= blocks.Length || resultBlocks[blockIndex] != 0)
+                {
+                    return false;
+                }
+                resultBlocks[blockIndex] = workerNumber;
+                int newWorkerSum = workerSum + blocks[blockIndex];
+                if (newWorkerSum > expectedBlockSum)
                 {
                     resultBlocks[blockIndex] = 0;
                     return false;
                 }
-                if (currentSum == expectedBlockSum)
+
+                if(newWorkerSum < expectedBlockSum)
                 {
-                    for (int block2 = 0; block2 < blocks.Length; block2++)
+                    int currentIndex = blockIndex + 1;
+                    while (currentIndex < blocks.Length)
                     {
-                        if (resultBlocks[block2] != 0)
-                            continue;
-                        bool resultFrom2 = GiveBlockTo2(block2, 0);
-                        if (resultFrom2 == true) return true;
+                        bool isDivision1Possible = giveBlock(blockIndex: currentIndex, workerNumber: workerNumber, workerSum: newWorkerSum);
+                        if (isDivision1Possible)
+                            return true;
+                        currentIndex++;
                     }
                 }
-                if (currentSum < expectedBlockSum)
+
+                else
                 {
-                    for (int block = 0; block < blocks.Length; block++)
+                    if (workerNumber == 2)
                     {
-                        if (resultBlocks[block] != 0)
-                            continue;
-                        bool resultFrom1 = GiveBlockTo1(block, currentSum);
-                        if (resultFrom1 == false)
+                        return true;
+                    }
+                    else
+                    {
+                        int currentIndex = 0;
+                        while (currentIndex < blocks.Length)
                         {
-                            int blockHelper = block;
-                            while (blockHelper < blocks.Length - 1)
-                            {
-                                if (blocks[blockHelper] == blocks[blockHelper + 1])
-                                    blockHelper++;
-                                else
-                                    break;
-                            }
-                            if(blockHelper!=block)
-                            {
-                                block = blockHelper;
-                            }
-
+                            bool isDivision2Possible = giveBlock(blockIndex: currentIndex, workerNumber: 2, workerSum: 0);
+                            if (isDivision2Possible)
+                                return true;
+                            currentIndex++;
                         }
-                        if (resultFrom1 == true) return true;
                     }
                 }
-                resultBlocks[blockIndex] = 0;
-                return false;
 
-            }
-
-            bool GiveBlockTo2(int blockIndex, int workerSum)
-            {
-                resultBlocks[blockIndex] = 2;
-                int currentSum = workerSum + blocks[blockIndex];
-                if (currentSum > expectedBlockSum)
-                {
-                    resultBlocks[blockIndex] = 0;
-                    return false;
-                }
-                if (currentSum == expectedBlockSum)
-                {
-                    return true;
-                }
-                if (currentSum < expectedBlockSum)
-                {
-                    for (int block2Index = 0; block2Index < blocks.Length; block2Index++)
-                    {
-                        if (resultBlocks[block2Index] != 0)
-                            continue;
-                        bool resultFrom2 = GiveBlockTo2(block2Index, currentSum);
-                        if (resultFrom2 == false)
-                        {
-                            int blockHelper = block2Index;
-                            while (blockHelper < blocks.Length - 1)
-                            {
-                                if (blocks[blockHelper] == blocks[blockHelper + 1])
-                                    blockHelper++;
-                                else
-                                    break;
-                            }
-                            if (blockHelper != block2Index)
-                            {
-                                block2Index = blockHelper;
-                            }
-
-                        }
-                        if (resultFrom2 == true) return true;
-                    }
-                }
                 resultBlocks[blockIndex] = 0;
                 return false;
             }
