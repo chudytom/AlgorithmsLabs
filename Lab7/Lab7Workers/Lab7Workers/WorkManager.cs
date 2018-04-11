@@ -18,6 +18,14 @@ namespace ASD
         /// </summary>
         public int[] DivideWorkersWork(int[] blocks, int expectedBlockSum)
         {
+            int totalPossible = 0;
+            for (int i = 0; i < blocks.Length; i++)
+            {
+                totalPossible += blocks[i];
+            }
+            if (totalPossible < expectedBlockSum * 2)
+                return null;
+
             if (blocks == null || blocks.Length == 0)
                 return null;
             int[] resultBlocks = new int[blocks.Length];
@@ -99,6 +107,14 @@ namespace ASD
             if (blocks == null || blocks.Length == 0)
                 return null;
 
+            int totalPossible = 0;
+            for (int i = 0; i < blocks.Length; i++)
+            {
+                totalPossible += blocks[i];
+            }
+            if (totalPossible < expectedBlockSum * 2)
+                return null;
+
             int currentBestDiff = int.MaxValue;
             int[] bestSolution = new int[blocks.Length];
             //List<int[]> solutions = new List<int[]>();
@@ -157,11 +173,18 @@ namespace ASD
                 if (newWorkerSum < expectedBlockSum)
                 {
                     int currentIndex = blockIndex + 1;
+                    HashSet<int> failedValues = new HashSet<int>();
                     while (currentIndex < blocks.Length)
                     {
+                        if (failedValues.Contains(blocks[currentIndex]))
+                        {
+                            currentIndex++;
+                            continue;
+                        }
                         bool isDivision1Possible = giveBlock(blockIndex: currentIndex, workerNumber: workerNumber, workerSum: newWorkerSum);
                         if (isDivision1Possible)
                             return true;
+                        failedValues.Add(blocks[currentIndex]);
                         currentIndex++;
                     }
                 }
@@ -170,7 +193,6 @@ namespace ASD
                 {
                     if (workerNumber == 2)
                     {
-                        
 
                         int worker1 = 0;
                         int worker2 = 0;
@@ -201,11 +223,18 @@ namespace ASD
                     else
                     {
                         int currentIndex = 0;
+                        HashSet<int> failedValues = new HashSet<int>();
                         while (currentIndex < blocks.Length)
                         {
+                            if(failedValues.Contains(blocks[currentIndex]))
+                            {
+                                currentIndex++;
+                                continue;
+                            }
                             bool isDivision2Possible = giveBlock(blockIndex: currentIndex, workerNumber: 2, workerSum: 0);
                             if (isDivision2Possible)
                                 return true;
+                            failedValues.Add(blocks[currentIndex]);
                             currentIndex++;
                         }
                     }
