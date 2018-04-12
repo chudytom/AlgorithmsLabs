@@ -18,17 +18,29 @@ namespace ASD
         /// </summary>
         public int[] DivideWorkersWork(int[] blocks, int expectedBlockSum)
         {
+            int[] resultBlocks = new int[blocks.Length];
+            if (blocks == null)
+                return null;
+
             int totalPossible = 0;
             for (int i = 0; i < blocks.Length; i++)
             {
                 totalPossible += blocks[i];
             }
+
+            if (blocks.Length == 0 || expectedBlockSum == 0)
+                return resultBlocks;
+
+            if (totalPossible == 0 )
+            {
+                resultBlocks[0] = 1;
+                resultBlocks[1] = 2;
+                return resultBlocks;
+            }
+
             if (totalPossible < expectedBlockSum * 2)
                 return null;
 
-            if (blocks == null || blocks.Length == 0)
-                return null;
-            int[] resultBlocks = new int[blocks.Length];
             bool divisionPossible = false;
 
             for (int blockIndex = 0; blockIndex < blocks.Length; blockIndex++)
@@ -58,7 +70,7 @@ namespace ASD
                     return false;
                 }
 
-                if(newWorkerSum < expectedBlockSum)
+                if (newWorkerSum < expectedBlockSum)
                 {
                     int currentIndex = blockIndex + 1;
                     int previousIndex = -1;
@@ -104,7 +116,7 @@ namespace ASD
         /// </summary>
         public int[] DivideWorkWithClosestBlocksCount(int[] blocks, int expectedBlockSum)
         {
-            if (blocks == null || blocks.Length == 0)
+            if (blocks == null)
                 return null;
 
             int totalPossible = 0;
@@ -112,6 +124,10 @@ namespace ASD
             {
                 totalPossible += blocks[i];
             }
+
+            if (blocks.Length == 0 || totalPossible == 0)
+                return new int[0];
+
             if (totalPossible < expectedBlockSum * 2)
                 return null;
 
@@ -127,29 +143,6 @@ namespace ASD
                 if (divisionPossible)
                     break;
             }
-
-            //int[] bestSolution = new int[blocks.Length];
-            //int bestDifference = int.MaxValue;
-
-            //foreach (var solution in solutions)
-            //{
-            //    int worker1 = 0;
-            //    int worker2 = 0;
-
-            //    for (int blockIndex = 0; blockIndex < blocks.Length; blockIndex++)
-            //    {
-            //        if (solution[blockIndex] == 1)
-            //            worker1++;
-            //        if (solution[blockIndex] == 2)
-            //            worker2++;
-            //    }
-            //    int diff = Math.Abs(worker1 - worker2);
-            //    if (diff < bestDifference)
-            //    {
-            //        bestDifference = diff;
-            //        bestSolution = solution;
-            //    }
-            //}
 
             if (currentBestDiff < int.MaxValue)
                 return bestSolution;
@@ -226,7 +219,7 @@ namespace ASD
                         HashSet<int> failedValues = new HashSet<int>();
                         while (currentIndex < blocks.Length)
                         {
-                            if(failedValues.Contains(blocks[currentIndex]))
+                            if (failedValues.Contains(blocks[currentIndex]))
                             {
                                 currentIndex++;
                                 continue;
