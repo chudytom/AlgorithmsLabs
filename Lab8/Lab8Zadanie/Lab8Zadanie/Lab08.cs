@@ -22,18 +22,22 @@ namespace Lab08
             //exampleSolution.Add(a[0]);
             int possibleBuildings = 0;
             int previousBuildingIndex = 0;
+            //exampleSolution.Add(a[0]);
             for (int i = 0; i < a.Length - 1; i++)
             {
                 if (Math.Abs(a[previousBuildingIndex] - a[i + 1]) >= dist)
                 {
                     if (exampleSolution.Count == 0)
+                    {
+                        possibleBuildings++;
                         exampleSolution.Add(a[previousBuildingIndex]);
+                    }
+
                     previousBuildingIndex = i + 1;
                     exampleSolution.Add(a[i + 1]);
                     possibleBuildings++;
                 }
             }
-            possibleBuildings++;
             if (possibleBuildings >= k)
                 return true;
             exampleSolution = null;
