@@ -369,93 +369,93 @@ namespace asd2
             TestSets["CheckIntersectionLabTests"].TestCases.Add(new CheckIntersectionTestCase(1, null, "", new Street(new Point(0, 0), new Point(1, 2)), new Street(new Point(5, 0), new Point(4, 2)), 0));
 
             //--- Część II: CheckStreetsPairs ---
-            TestSets["CheckStreetsPairsLabTests"] = new TestSet(new City(), "CheckStreetsPairs - testy lab", null, false);
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, new ArgumentException(), "", cities[0],
-                new int[] { },
-                new int[] { },
-                new bool[] { }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[1],
-                new int[] { 0, 1, 3, 6, 3, 6, 4, 1 },
-                new int[] { 1, 2, 2, 0, 3, 5, 5, 5 },
-                new bool[] { false, true, true, false, true, false, true, true }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[2],
-                new int[] { 0, 1, 5, 5, 3, 1, 1, 2 },
-                new int[] { 1, 2, 2, 0, 1, 1, 5, 3 },
-                new bool[] { false, false, false, false, false, true, false, false }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[3],
-                new int[] { 1, 0, 4, 2, 1, 1, 7, 7, 6 },
-                new int[] { 0, 2, 0, 5, 6, 8, 8, 2, 3 },
-                new bool[] { false, true, true, true, true, true, true, false, false }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[4],
-                new int[] { 0, 4, 9, 2, 1, 6, 7 },
-                new int[] { 3, 5, 11, 5, 8, 10, 8 },
-                new bool[] { true, true, true, false, false, false, false }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[5],
-                new int[] { 0 },
-                new int[] { 0 },
-                new bool[] { true }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[6],
-                new int[] { 0, 3, 1, 6, 8, 1, 5 },
-                new int[] { 2, 5, 5, 7, 6, 7, 6 },
-                new bool[] { true, true, true, true, true, false, false }));
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[7],
-                new int[] { 0, 4, 9, 13, 0, 5, 1, 5 },
-                new int[] { 2, 5, 10, 15, 11, 10, 13, 15 },
-                new bool[] { true, true, true, true, true, true, false, false }));
-            List<int> c8ListCheckStreets1 = new List<int>();
-            List<int> c8ListCheckStreets2 = new List<int>();
-            List<bool> c8ResultCheckStreetsPairs = new List<bool>();
-            for (int i = 0; i < 2000; i++)
-                for (int j = 0; j < 2000; j++)
-                    if (i != j)
-                    {
-                        c8ListCheckStreets1.Add(i);
-                        c8ListCheckStreets2.Add(j);
-                        c8ResultCheckStreetsPairs.Add(false);
-                    }
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[8], c8ListCheckStreets1.ToArray(), c8ListCheckStreets2.ToArray(), c8ResultCheckStreetsPairs.ToArray()));
+            //TestSets["CheckStreetsPairsLabTests"] = new TestSet(new City(), "CheckStreetsPairs - testy lab", null, false);
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, new ArgumentException(), "", cities[0],
+            //    new int[] { },
+            //    new int[] { },
+            //    new bool[] { }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[1],
+            //    new int[] { 0, 1, 3, 6, 3, 6, 4, 1 },
+            //    new int[] { 1, 2, 2, 0, 3, 5, 5, 5 },
+            //    new bool[] { false, true, true, false, true, false, true, true }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[2],
+            //    new int[] { 0, 1, 5, 5, 3, 1, 1, 2 },
+            //    new int[] { 1, 2, 2, 0, 1, 1, 5, 3 },
+            //    new bool[] { false, false, false, false, false, true, false, false }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[3],
+            //    new int[] { 1, 0, 4, 2, 1, 1, 7, 7, 6 },
+            //    new int[] { 0, 2, 0, 5, 6, 8, 8, 2, 3 },
+            //    new bool[] { false, true, true, true, true, true, true, false, false }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[4],
+            //    new int[] { 0, 4, 9, 2, 1, 6, 7 },
+            //    new int[] { 3, 5, 11, 5, 8, 10, 8 },
+            //    new bool[] { true, true, true, false, false, false, false }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[5],
+            //    new int[] { 0 },
+            //    new int[] { 0 },
+            //    new bool[] { true }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[6],
+            //    new int[] { 0, 3, 1, 6, 8, 1, 5 },
+            //    new int[] { 2, 5, 5, 7, 6, 7, 6 },
+            //    new bool[] { true, true, true, true, true, false, false }));
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[7],
+            //    new int[] { 0, 4, 9, 13, 0, 5, 1, 5 },
+            //    new int[] { 2, 5, 10, 15, 11, 10, 13, 15 },
+            //    new bool[] { true, true, true, true, true, true, false, false }));
+            //List<int> c8ListCheckStreets1 = new List<int>();
+            //List<int> c8ListCheckStreets2 = new List<int>();
+            //List<bool> c8ResultCheckStreetsPairs = new List<bool>();
+            //for (int i = 0; i < 2000; i++)
+            //    for (int j = 0; j < 2000; j++)
+            //        if (i != j)
+            //        {
+            //            c8ListCheckStreets1.Add(i);
+            //            c8ListCheckStreets2.Add(j);
+            //            c8ResultCheckStreetsPairs.Add(false);
+            //        }
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[8], c8ListCheckStreets1.ToArray(), c8ListCheckStreets2.ToArray(), c8ResultCheckStreetsPairs.ToArray()));
 
-            List<int> c9ListCheckStreets1 = new List<int>();
-            List<int> c9ListCheckStreets2 = new List<int>();
-            List<bool> c9ResultCheckStreetsPairs = new List<bool>();
-            for (int i = 0; i < 1000; i += 2)
-                for (int j = 0; j < 1000; j += 2)
-                    if (i != j)
-                    {
-                        c9ListCheckStreets1.Add(i);
-                        c9ListCheckStreets2.Add(j);
-                        c9ResultCheckStreetsPairs.Add(true);
-                    }
-            for (int i = 1; i < 1000; i += 2)
-                for (int j = 1; j < 1000; j += 2)
-                    if (i != j)
-                    {
-                        c9ListCheckStreets1.Add(i);
-                        c9ListCheckStreets2.Add(j);
-                        c9ResultCheckStreetsPairs.Add(true);
-                    }
-            for (int i = 0; i < 1000; i += 2)
-                for (int j = 1; j < 1000; j += 2)
-                {
-                    c9ListCheckStreets1.Add(i);
-                    c9ListCheckStreets2.Add(j);
-                    c9ResultCheckStreetsPairs.Add(false);
-                }
-            TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[9], c9ListCheckStreets1.ToArray(), c9ListCheckStreets2.ToArray(), c9ResultCheckStreetsPairs.ToArray()));
+            //List<int> c9ListCheckStreets1 = new List<int>();
+            //List<int> c9ListCheckStreets2 = new List<int>();
+            //List<bool> c9ResultCheckStreetsPairs = new List<bool>();
+            //for (int i = 0; i < 1000; i += 2)
+            //    for (int j = 0; j < 1000; j += 2)
+            //        if (i != j)
+            //        {
+            //            c9ListCheckStreets1.Add(i);
+            //            c9ListCheckStreets2.Add(j);
+            //            c9ResultCheckStreetsPairs.Add(true);
+            //        }
+            //for (int i = 1; i < 1000; i += 2)
+            //    for (int j = 1; j < 1000; j += 2)
+            //        if (i != j)
+            //        {
+            //            c9ListCheckStreets1.Add(i);
+            //            c9ListCheckStreets2.Add(j);
+            //            c9ResultCheckStreetsPairs.Add(true);
+            //        }
+            //for (int i = 0; i < 1000; i += 2)
+            //    for (int j = 1; j < 1000; j += 2)
+            //    {
+            //        c9ListCheckStreets1.Add(i);
+            //        c9ListCheckStreets2.Add(j);
+            //        c9ResultCheckStreetsPairs.Add(false);
+            //    }
+            //TestSets["CheckStreetsPairsLabTests"].TestCases.Add(new CheckStreetsPairsTestCase(20, null, "", cities[9], c9ListCheckStreets1.ToArray(), c9ListCheckStreets2.ToArray(), c9ResultCheckStreetsPairs.ToArray()));
 
             //--- Część III: GetIntersectionPoint ---
-            TestSets["GetIntersectionPointLabTests"] = new TestSet(new City(), "GetIntersectionPoint - testy lab", null, false);
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(3, 3)), new Street(new Point(0, 3), new Point(3, 0)), new Point(1.5, 1.5)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 4), new Point(4, 2)), new Street(new Point(-4, -6), new Point(4, 6)), new Point(2, 3)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(2, 8)), new Street(new Point(-5, 1), new Point(5, 1)), new Point(0.25, 1)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 2.5), new Point(2.5, 2.5)), new Street(new Point(-5, -5), new Point(5, 5)), new Point(2.5, 2.5)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(-2, 5), new Point(-2, -5)), new Street(new Point(-2, -1), new Point(2, -1)), new Point(-2, -1)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(1, 1), new Point(2, 2)), new Street(new Point(1.234, -100), new Point(1.234, 1000)), new Point(1.234, 1.234)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(1, 1)), new Street(new Point(1, 1), new Point(3, 3)), new Point(1, 1)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(10, 10), new Point(3, 3)), new Street(new Point(1, 1), new Point(3, 3)), new Point(3, 3)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(1, 5), new Point(2, 3)), new Street(new Point(1, 5), new Point(2, 3)), new Point(0, 0)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(-1, -1), new Point(1, 1)), new Street(new Point(-2, -1), new Point(0, 1)), new Point(0, 0)));
-            TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(0, 0), new Point(1, 2)), new Street(new Point(4, 0), new Point(3, 2)), new Point(0, 0)));
+            //TestSets["GetIntersectionPointLabTests"] = new TestSet(new City(), "GetIntersectionPoint - testy lab", null, false);
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(3, 3)), new Street(new Point(0, 3), new Point(3, 0)), new Point(1.5, 1.5)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 4), new Point(4, 2)), new Street(new Point(-4, -6), new Point(4, 6)), new Point(2, 3)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(2, 8)), new Street(new Point(-5, 1), new Point(5, 1)), new Point(0.25, 1)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 2.5), new Point(2.5, 2.5)), new Street(new Point(-5, -5), new Point(5, 5)), new Point(2.5, 2.5)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(-2, 5), new Point(-2, -5)), new Street(new Point(-2, -1), new Point(2, -1)), new Point(-2, -1)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(1, 1), new Point(2, 2)), new Street(new Point(1.234, -100), new Point(1.234, 1000)), new Point(1.234, 1.234)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(0, 0), new Point(1, 1)), new Street(new Point(1, 1), new Point(3, 3)), new Point(1, 1)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, null, "", new Street(new Point(10, 10), new Point(3, 3)), new Street(new Point(1, 1), new Point(3, 3)), new Point(3, 3)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(1, 5), new Point(2, 3)), new Street(new Point(1, 5), new Point(2, 3)), new Point(0, 0)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(-1, -1), new Point(1, 1)), new Street(new Point(-2, -1), new Point(0, 1)), new Point(0, 0)));
+            //TestSets["GetIntersectionPointLabTests"].TestCases.Add(new GetIntersectionPointTestCase(1, new ArgumentException(), "", new Street(new Point(0, 0), new Point(1, 2)), new Street(new Point(4, 0), new Point(3, 2)), new Point(0, 0)));
 
 
             //--- Część IV: CheckDistricts ---

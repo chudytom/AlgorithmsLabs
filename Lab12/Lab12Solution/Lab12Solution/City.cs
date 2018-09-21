@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ASD.Graphs;
 
 namespace asd2
@@ -31,8 +32,6 @@ namespace asd2
                 return 0;
             if (d12 < 0 || d34 < 0)
                 return 1;
-
-
 
             if ((p1 == p3 || p1 == p4) && !OnRectangle(p2, p3, p4))
                 return 1;
@@ -78,8 +77,6 @@ namespace asd2
         /// <returns>Lista, w której na i-tym miejscu jest informacja czy przejazd między ulicami w i-tej parze z wejścia jest możliwy</returns>
         public bool[] CheckStreetsPairs(Street[] streets, int[] streetsToCheck1, int[] streetsToCheck2)
         {
-            Graph g = new AdjacencyListsGraph<HashTableAdjacencyList>(true, streets.Length);
-
             UnionFind union = new UnionFind(streets.Length);
 
             for (int i = 0; i < streets.Length; i++)
@@ -125,10 +122,15 @@ namespace asd2
             //uwaga na proste równoległe do osi y
             //uwaga na odcinki równoległe o wspólnych końcu
             //porównaj równania prostych, aby znaleźć ich punkt wspólny
-
             int intersectionResult = CheckIntersection(s1, s2);
             if (intersectionResult != 1)
                 throw new ArgumentException();
+
+            if (s1.p1 == s2.p1 || s1.p1 == s2.p2)
+                return s1.p1;
+
+            if (s1.p2 == s2.p1 || s1.p2 == s2.p2)
+                return s1.p2;
 
             bool is1Vertical = !TryGetLinearFunction(s1.p1, s1.p2, out double a1, out double b1);
             bool is2Vertical = !TryGetLinearFunction(s2.p1, s2.p2, out double a2, out double b2);
@@ -181,7 +183,176 @@ namespace asd2
         {
             path = new List<int>();
             intersections = new List<Point>();
+            Graph g = new AdjacencyListsGraph<HashTableAdjacencyList>(false, streets.Length);
+
+            for (int i = 0; i < streets.Length; i++)
+            {
+                for (int j = 0; j < streets.Length; j++)
+                {
+                    if (j == i)
+                        continue;
+                    //int firstStreetIndex = streetsToCheck1[i];
+                    //int secondStreetIndex = streetsToCheck2[j];
+                    int intersectionResult = CheckIntersection(streets[i], streets[j]);
+                    if (intersectionResult == 1)
+                        g.AddEdge(i, j);
+                    if (intersectionResult == int.MaxValue)
+                        throw new ArgumentException();
+                }
+            }
+
+            var streetsConnectedToDiscrict1 = new List<int>();
+            var streetsConnectedToDiscrict2 = new List<int>();
+
+            for (int i = 0; i < streets.Length; i++)
+            {
+                if (IsStreetInsidePolygon(streets[i], district1))
+                    streetsConnectedToDiscrict1.Add(i);
+
+                if (IsStreetInsidePolygon(streets[i], district2))
+                    streetsConnectedToDiscrict2.Add(i);
+            }
+
+            bool connectionBetweenDistrictsExists = false;
+            Edge[] edgePath = new Edge[0];
+            bool shouldContinueOuterLoop = true;
+            foreach (var sourceIndex in streetsConnectedToDiscrict1)
+            {
+                if (shouldContinueOuterLoop)
+                    foreach (int destinationIndex in streetsConnectedToDiscrict2)
+                    {
+                        bool pathExists = CheckIfPathExists(g, sourceIndex, destinationIndex, out edgePath);
+                        if (pathExists)
+                        {
+                            shouldContinueOuterLoop = false;
+                            connectionBetweenDistrictsExists = true;
+                            if (sourceIndex == destinationIndex)
+                            {
+                                path.Add(sourceIndex);
+                            }
+                            break;
+                        }
+                    }
+                else
+                    break;
+            }
+
+            if (connectionBetweenDistrictsExists)
+            {
+                if (edgePath.Length != 0)
+                {
+                    //if (edgePath.Length < 400)
+                    path.Add(edgePath.First().From);
+                    foreach (var edge in edgePath)
+                    {
+                        path.Add(edge.To);
+                    }
+                    if (path.Count > 1)
+                        for (int i = 0; i < path.Count - 1; i++)
+                        {
+                            var intersectionPoint = GetIntersectionPoint(streets[path[i]], streets[path[i + 1]]);
+                            intersections.Add(intersectionPoint);
+                        }
+                }
+            }
+
+            return connectionBetweenDistrictsExists;
+        }
+
+        //Consider intersections with end points
+        private bool IsPointInsidePolygon(Point point, Point[] polygon)
+        {
+            var oxHalfLine = new Street(point, new Point(int.MaxValue, point.y));
+            int intersectionsCount = 0;
+            var edges = new List<Street>();
+            for (int i = 0; i < polygon.Length - 1; i++)
+            {
+                edges.Add(new Street(polygon[i], polygon[i + 1]));
+            }
+            edges.Add(new Street(polygon.Last(), polygon[0]));
+
+            foreach (var edge in edges)
+            {
+                if (IsPointOnLine(point, edge))
+                    return true;
+                int intersectionResult = CheckIntersection(oxHalfLine, edge);
+                if (intersectionResult == 1)
+                    intersectionsCount++;
+                //else if (intersectionResult == int.MaxValue)
+                //    intersectionsCount++;
+            }
+
+
+
+            if (intersectionsCount % 2 == 1)
+                return true;
+            else
+                return false;
+        }
+
+        private bool IsStreetInsidePolygon(Street street, Point[] polygon)
+        {
+            //var oxHalfLine = new Street(point, new Point(int.MaxValue, point.y));
+            //int intersectionsCount = 0;
+            var edges = new List<Street>();
+            for (int i = 0; i < polygon.Length - 1; i++)
+            {
+                edges.Add(new Street(polygon[i], polygon[i + 1]));
+            }
+            edges.Add(new Street(polygon.Last(), polygon[0]));
+
+            foreach (var edge in edges)
+            {
+                int intersectionResult = CheckIntersection(edge, street);
+                if (intersectionResult == 1)
+                    return true;
+            }
             return false;
+        }
+
+        private bool IsPointOnLine(Point p, Street street)
+        {
+            var p1 = street.p1;
+            var p2 = street.p2;
+            bool isVertical = TryGetLinearFunction(p1, p2, out double slope, out double valueIn0);
+            if (isVertical)
+            {
+                double x = p2.x;
+                if (p.x != x)
+                    return false;
+                if (p.y < Math.Min(p1.y, p2.y))
+                    return false;
+                if (p.y > Math.Max(p1.y, p2.y))
+                    return false;
+                else
+                    return true;
+            }
+            double resolution = 1;
+            if (Math.Abs(p.y - (slope * p.x + valueIn0)) < resolution)
+                return true;
+            else
+                return false;
+        }
+
+        private bool CheckIfPathExists(Graph g, int source, int target, out Edge[] path)
+        {
+            bool pathFound = false;
+            //Predicate<int> beforeVisit = (int n) =>
+            //{
+            //    if (n == target)
+            //    {
+            //        pathFound = true;
+            //        return false;
+            //    }
+            //    else
+            //        return true;
+            //};
+
+            //g.DFSearchFrom(source, beforeVisit, null);
+
+            pathFound = g.AStar(source, target, out path);
+
+            return pathFound;
         }
 
     }
